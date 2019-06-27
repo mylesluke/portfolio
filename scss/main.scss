@@ -65,5 +65,18 @@ main {
         .icons {
             margin-left: 10vh;
         }
+        button {
+            margin-left: 10vh;
+            margin-bottom: 5vh;
+            border: 2px solid #fff;
+            color: #fff;
+            background: none;
+            padding: 8px 30px;
+            cursor: pointer;
+            &:hover {
+                border: 2px solid $secondary-color;
+                @include easeOut;
+            }
+        }
     }
 }
