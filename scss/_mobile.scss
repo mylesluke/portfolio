@@ -72,22 +72,21 @@
 // Smartphones
 @include mediaSm {
         
-        main {
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            //background: yellow;
-    
-            .lg-heading {
-                margin-top: 2rem;
-                font-size: 2rem;
-            }
-            .sm-heading {
-                margin: 0;
-                font-size: 1rem;
+    main {
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
 
-            }
-      }
+        .lg-heading {
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        .sm-heading {
+            margin: 0;
+            font-size: 1rem;
+
+        }
+    }
     .projects {
         grid-gap: 1rem;
         grid-template-areas:
@@ -100,7 +99,24 @@
             height: 300px;
             width: 300px;
         }
-
     }
+    .menu-profile {
+        .portrait {
+            width: 150px;
+            height: 150px;
+            background: url('../img/profileSm.jpg');
+        }
+    }
+    .menu-nav {
+        .nav-link {
+            font-size: 1rem;
+            &:hover {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    
+
     
 }
