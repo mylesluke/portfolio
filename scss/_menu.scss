@@ -38,7 +38,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: .8;
     visibility: hidden; // Hidden until active
 
     &.show {
@@ -59,7 +59,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
+        background: lighten($primary-color, 30);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -97,7 +97,7 @@
             transform: translate3d(0,0,0);
         }
         &.active > a {
-            color: #000;
+            color: text-colour($primary-color);
         }
     }
     .nav-link {
@@ -111,7 +111,7 @@
         text-decoration: none;
         @include easeOut;
         &:hover {
-            color: #000;
+            color: text-colour($primary-color);
             font-size: 3rem;
         }
     }

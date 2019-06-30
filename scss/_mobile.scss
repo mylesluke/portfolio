@@ -1,10 +1,16 @@
 // Wide Screens
 @include mediaXl {
-
+    .projects {
+       margin: 0 10%;
+       img {
+           height: 250px;
+           width: 300px;
+       }
+    }
 }
 // Desktops & Laptops
 @include mediaLg {
-
+ 
 }
 // Tablets & Small Laptops
 @include mediaMd {
@@ -54,7 +60,47 @@
         'gear3';
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-gap: 2rem;
+        img {
+            width: 270px;
+            height: 300px;
+        }
+    }
 }
 // Smartphones
 @include mediaSm {
+        
+        main {
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            //background: yellow;
+    
+            .lg-heading {
+                margin-top: 2rem;
+                font-size: 2rem;
+            }
+            .sm-heading {
+                margin: 0;
+                font-size: 1rem;
+
+            }
+      }
+    .projects {
+        grid-gap: 1rem;
+        grid-template-areas:
+        'item-pic1'
+        'item-desc1'
+        'item-pic2'
+        'item-desc2';
+        grid-template-columns: 1fr;
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+    }
+    
 }
