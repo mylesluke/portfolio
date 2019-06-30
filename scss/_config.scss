@@ -1,4 +1,4 @@
-$primary-color: #FC5C65;
+$primary-color: rgba(151, 52, 52, 0.356); //#FC5C65
 $secondary-color: #b2bec3;
 $show-home-image: true;
 $home-image: url(../img/bg.jpg);
@@ -26,6 +26,15 @@ $background-opacity: 0.9;
             z-index: -1;
             background:rgba($primary-color, $background-opacity);
         }
+    }
+}
+
+// Text Colour
+@function text-colour($colour) {
+    @if (lightness($colour) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
     }
 }
 
