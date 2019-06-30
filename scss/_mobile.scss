@@ -9,9 +9,8 @@
     }
 }
 // Desktops & Laptops
-@include mediaLg {
- 
-}
+//@include mediaLg {
+//}
 // Tablets & Small Laptops
 @include mediaMd {
     main {
@@ -73,8 +72,8 @@
 @include mediaSm {
         
     main {
-        align-items: center;
-        text-align: center;
+        //align-items: center;
+        //text-align: center;
         padding: 2rem;
 
         .lg-heading {
@@ -84,9 +83,9 @@
         .sm-heading {
             margin: 0;
             font-size: 1rem;
-
-        }
+        } 
     }
+
     .projects {
         grid-gap: 1rem;
         grid-template-areas:
@@ -114,6 +113,22 @@
                 font-size: 2rem;
             }
         }
+    }
+    label{
+        font-size: .7rem;
+    }
+    .btn {
+        font-size: .7rem;
+    }
+    input {
+        line-height: 1rem;
+    }
+    textarea {
+        line-height: 1rem;
+        font-size: .9rem;
+    }
+    .download a {
+        margin: 2px;
     }
     
     

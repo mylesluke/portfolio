@@ -32,6 +32,7 @@ h1,h2,h3 {
         left: 50px;
         font-family: 'Satisfy', cursive;
     }
+    // for the projects page
     &#title {
         font-weight: 500;
         text-align: center;
@@ -79,6 +80,14 @@ main {
             margin-left: 10vh;
             margin-bottom: 10px;
         }
+        #bold {
+            font-weight: 900;
+            font-family: sans-serif;
+        }
+        #unique {
+            font-family: sans-serif;
+            font-style: italic;
+        }
     }
     &#about {
         overflow: hidden;
@@ -110,7 +119,7 @@ main {
         grid-area: bio-image;
         margin: auto;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border: $secondary-color 5px solid;
     }
     
     .bio {
@@ -118,8 +127,10 @@ main {
         font-size: 1rem;
         padding: 20px;
         li {
-            margin: 0 30%;
             text-align: left;
+        }
+        h3{ 
+            font-weight: 700;
         }
     }
     
@@ -215,13 +226,58 @@ main {
     margin-top: 5%;
 }
 
+form-control {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
 
+textarea{
+    overflow: auto;
+    resize: none;
+    border-radius: .25rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    line-height: 1.5rem;
+    padding: 5px;
+}
 
+input {
+    border-radius: .25rem;
+    line-height: 1.5rem;
+    width: 100%;
+    padding: 5px;
+}
+.submit {
+    @extend .btn;
+    width: 50%;
+    margin: .5% 25%;
+    text-align: center;
+    
+}
+
+label {
+    display: inline-block;
+    margin: .5rem 0;
+}
+
+.download {
+    text-align: center;
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: set-text-colour ($primary-color);
+    }
+    a:hover {
+        color: $secondary-color;
+    }
+}
 
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color, 10);
+    background: darken($primary-color, 5);
     color: set-text-colour($primary-color);
     height: 60px;
     font-size: .8rem;
