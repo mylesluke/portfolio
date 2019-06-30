@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
-    <title>Myles Luke - Portfolio</title>
+    <title>Contact Me</title>
 
 
 </head>
 
-<body id="bg-img">
+<body>
     <header>
         <h1 class="logo">Myles Luke</h1>
         <div class="menu-btn">
@@ -27,7 +27,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
@@ -36,32 +36,40 @@
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main id="home">
+    <main id="contact">
         <h1 class="lg-heading">
-            Front-End Developer & Model Hobbyist
+            Contact Me
         </h1>
         <h2 class="sm-heading">
-            Focusing on creating amazing experiences that are both
-            <span id="bold">bold</span> and <span id="unique">unique</span>
-            to help your business grow.
+            This is how you can reach me...
         </h2>
-        <a href="contact.html"><button class="btn">Hire Me</button></a>
-        
-        <div class="icons">
-            <a href="https://github.com/mylesluke/">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://linkedin.com/in/mylesluke">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
+        <form class="form-control" method="POST" action="../php/form-handler.php">
+            <label>Name</label>
+            <input type="text" name="name" maxlength="20" required autofocus><br>
+            <label>Email</label>
+            <input type="text" name="email" maxlength="50" required><br>
+            <label>Subject</label>
+            <input type="text" name="subject" maxlength="20" required><br>
+            <label>Message</label>
+            <textarea rows='10' cols='15' name="message" maxlength="250" required></textarea><br>
+            <input type="submit" class="submit btn" name="btnSubmit" value="Submit">
+        </form>
+        <div class="download">
+            <a href="./downloads/CV - MylesLuke.pdf" download>Download CV</a>
         </div>
     </main>
+
+    <footer id="main-footer">
+        &copy; 2019 MYLES LUKE. ALL RIGHTS RESERVED.<br>
+        Created and Coded by Myles Luke
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 
