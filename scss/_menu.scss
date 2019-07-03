@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: set-text-colour($primary-color);
+        background: #000;
         @include easeOut;
     }
 
@@ -38,7 +38,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: .95;
+    opacity: .90;
     visibility: hidden; // Hidden until active
 
     &.show {
@@ -97,7 +97,7 @@
             transform: translate3d(0,0,0);
         }
         &.active > a {
-            color: $secondary-color;
+            color: $third-color;
         }
     }
     .nav-link {
@@ -107,11 +107,11 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 700;
-        color: set-text-colour($primary-color);
+        color: #fff;
         text-decoration: none;
         @include easeOut;
         &:hover {
-            color: $secondary-color;
+            color: $third-color;
             font-size: 3rem;
         }
     }
