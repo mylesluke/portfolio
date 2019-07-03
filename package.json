@@ -11,7 +11,9 @@
   "author": "Myles Luke",
   "license": "MIT",
   "dependencies": {
+    "@dogstudio/highway": "^2.1.2",
     "gh-pages": "^2.0.1",
+    "gsap": "^2.1.3",
     "node-sass": "^4.12.0"
   }
 }
