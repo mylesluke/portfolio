@@ -105,7 +105,6 @@
 
 body {
   background: #fff;
-  color: set-text-colour(#b33939);
   height: 100%;
   margin: 0;
   font-family: 'quicksand', sans-serif;
@@ -309,8 +308,7 @@ label {
   text-align: center; }
   .download a {
     font-weight: bold;
-    text-decoration: none;
-    color: set-text-colour(#b33939); }
+    text-decoration: none; }
   .download a:hover {
     color: #778ca3; }
 

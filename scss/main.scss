@@ -8,7 +8,6 @@
 body {
     @include background;
     background: #fff; 
-    color: set-text-colour($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'quicksand', sans-serif;
@@ -273,7 +272,6 @@ label {
     a {
         font-weight: bold;
         text-decoration: none;
-        color: set-text-colour($primary-color);
     }
     a:hover {
         color: $secondary-color;
