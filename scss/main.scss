@@ -212,7 +212,7 @@ main {
 
     &:hover {
         padding: 16px 44px;
-        border: 3px dashed $third-color;
+        border: 3px dashed $secondary-color;
         @include easeOut;
     }
 }
