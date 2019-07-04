@@ -64,7 +64,7 @@
     .menu-profile .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/profile.jpg");
+      background: url("./img/profile.jpg");
       border-radius: 50%;
       border: solid 5px #778ca3; }
   .menu .nav-item {
@@ -110,7 +110,7 @@ body {
   font-family: 'quicksand', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: linear-gradient(120deg, #b33939 0%, #cf212171 74%), url(../img/bg.jpg);
+    background: linear-gradient(120deg, #b33939 0%, #cf212171 74%), url(./img/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     min-height: 100%; }
@@ -352,7 +352,7 @@ label {
       height: 25vh;
       transform: translate3d(100%, 0, 0); }
       main .menu-profile .portrait {
-        background: url(../img/profileSm.jpg);
+        background: url(./img/profileSm.jpg);
         width: 150px;
         height: 150px; }
   .about-info {
@@ -383,7 +383,7 @@ label {
   .menu-profile .portrait {
     width: 150px;
     height: 150px;
-    background: url("../img/profileSm.jpg"); }
+    background: url("./img/profileSm.jpg"); }
   .menu-nav .nav-link {
     font-size: 1rem; }
     .menu-nav .nav-link:hover {
