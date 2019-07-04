@@ -3,7 +3,7 @@ $secondary-color: #778ca3;
 $third-color: #fed330;
 $show-home-image: true;
 $home-image: linear-gradient(120deg, $primary-color 0%, #cf212171 74%),
-url(./img/bg.jpg);
+url(../img/bg.jpg);
 $background-opacity: 0.7;
 
 @mixin easeOut {
