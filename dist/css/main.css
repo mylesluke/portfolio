@@ -168,10 +168,10 @@ main {
     main#home h2 {
       margin-left: 10vh; }
     main#home .icons {
+      margin-top: 20px;
       margin-left: 10vh; }
-    main#home button {
-      margin-left: 10vh;
-      margin-bottom: 10px; }
+    main#home #btnHire {
+      margin-left: 10vh; }
     main#home #bold {
       font-weight: 900;
       font-family: sans-serif; }
@@ -235,7 +235,8 @@ main {
     height: 350px;
     width: 350px;
     border-radius: 15px;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    box-shadow: 6px 6px 10px #999999; }
     .projects img:hover {
       opacity: 0.6;
       border-color: #778ca3;
@@ -251,7 +252,7 @@ main {
   .projects .item-desc-2 {
     grid-area: item-desc2; }
 
-.btn, .btn-dark, .btn-light, .submit {
+.btn, .btn-dark, .btn-light, #btnHire, .submit {
   display: inline-block;
   border: 2px solid #fff;
   color: #fff;
@@ -259,9 +260,8 @@ main {
   padding: 12px 40px;
   cursor: pointer;
   font-size: 1rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover, .submit:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, #btnHire:hover, .submit:hover {
     padding: 16px 44px;
-    border: 3px solid #778ca3;
     transition: all 0.5s ease-out; }
 
 .btn-dark {
@@ -273,6 +273,75 @@ main {
   background: #faf1f1;
   color: #333;
   margin-top: 5%; }
+
+#btnHire {
+  position: relative;
+  letter-spacing: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  overflow: hidden; }
+  #btnHire:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); }
+  #btnHire:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: 0.5s;
+    transition-delay: 0.2s; }
+  #btnHire:hover:after {
+    left: 100%; }
+  #btnHire span {
+    position: absolute;
+    display: block;
+    transition: 0.5s ease; }
+  #btnHire span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #fff; }
+  #btnHire:hover span:nth-child(1) {
+    width: 100%;
+    transform: translateX(100%); }
+  #btnHire span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: #fff; }
+  #btnHire:hover span:nth-child(3) {
+    width: 100%;
+    transform: translateX(-100%); }
+  #btnHire span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 0;
+    background: #fff; }
+  #btnHire:hover span:nth-child(2) {
+    height: 100%;
+    transform: translateY(100%); }
+  #btnHire span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+    background: #fff; }
+  #btnHire:hover span:nth-child(4) {
+    height: 100%;
+    transform: translateY(-100%); }
 
 form-control {
   display: block;
@@ -298,7 +367,9 @@ input {
 .submit {
   width: 50%;
   margin: .5% 25%;
-  text-align: center; }
+  text-align: center;
+  color: #000;
+  border: 3px solid #000; }
 
 label {
   display: inline-block;
@@ -307,6 +378,7 @@ label {
 .download {
   text-align: center; }
   .download a {
+    color: #000;
     font-weight: bold;
     text-decoration: none; }
   .download a:hover {
@@ -352,7 +424,7 @@ label {
       height: 25vh;
       transform: translate3d(100%, 0, 0); }
       main .menu-profile .portrait {
-        background: url(./img/profileSm.jpg);
+        background: url(../img/profileSm.jpg);
         width: 150px;
         height: 150px; }
   .about-info {
@@ -383,14 +455,14 @@ label {
   .menu-profile .portrait {
     width: 150px;
     height: 150px;
-    background: url("./img/profileSm.jpg"); }
+    background: url("../img/profileSm.jpg"); }
   .menu-nav .nav-link {
     font-size: 1rem; }
     .menu-nav .nav-link:hover {
       font-size: 2rem; }
   label {
     font-size: .7rem; }
-  .btn, .btn-dark, .btn-light, .submit {
+  .btn, .btn-dark, .btn-light, #btnHire, .submit {
     font-size: .7rem; }
   input {
     line-height: 1rem; }
