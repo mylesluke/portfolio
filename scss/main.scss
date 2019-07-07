@@ -165,7 +165,8 @@ main {
     display: grid;
     grid-template-areas:
         'item-pic1 item-desc1'
-        'item-desc2 item-pic2';
+        'item-desc2 item-pic2'
+        'item-pic3 item-desc3';
     grid-template-columns: repeat(2, 1f);
     grid-gap: 5rem;
     margin-top: 10vh;
@@ -197,6 +198,12 @@ main {
     }
     .item-desc-2 {
         grid-area: item-desc2;
+    }
+    .item-3 {
+        grid-area: item-pic3;
+    }
+    .item-desc-3 {
+        grid-area: item-desc3;
     }
 }
 
