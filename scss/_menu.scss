@@ -87,6 +87,7 @@
             background: url('../img/profile.jpg');
             border-radius: 50%;
             border: solid 5px $secondary-color;
+            pointer-events: none;
         }
     }
     .nav-item {

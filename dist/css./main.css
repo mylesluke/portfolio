@@ -66,7 +66,8 @@
       height: 250px;
       background: url("../img/profile.jpg");
       border-radius: 50%;
-      border: solid 5px #778ca3; }
+      border: solid 5px #778ca3;
+      pointer-events: none; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -239,7 +240,8 @@ main {
     .projects img:hover {
       opacity: 0.6;
       border-color: #778ca3;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out;
+      pointer-events: none; }
   .projects li {
     margin: 0 10%; }
   .projects .item-1 {
@@ -278,6 +280,9 @@ main {
   background: #faf1f1;
   color: #333;
   margin-top: 5%; }
+
+.calendar {
+  display: block; }
 
 #btnHire {
   position: relative;
