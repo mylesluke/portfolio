@@ -19,15 +19,18 @@
     // Rotate Button Lines into X
     &.close {
         transform: rotate(180deg);
+
         .btn-line {
             &:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
+
             &:nth-child(2) {
                 opacity: 0;
             }
-            &:nth-child(3) { 
-                transform: rotate(135deg) translate(-6px, 6px); 
+
+            &:nth-child(3) {
+                transform: rotate(135deg) translate(-6px, 6px);
             }
         }
     }
@@ -38,12 +41,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: .90;
+    opacity: .95;
     visibility: hidden; // Hidden until active
 
     &.show {
         visibility: visible;
     }
+
     &-profile,
     &-nav {
         display: flex;
@@ -59,27 +63,27 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: lighten($primary-color, 10);
+        background: darken($primary-color, 5);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
 
         &.show {
             // Slide menu in from top
-            transform: translate3d(0,0,0);
-        };
+            transform: translate3d(0, 0, 0);
+        }
     }
-    
+
     &-profile {
-        background: $primary-color;
+        background: darken($primary-color, 10);
         @include easeOut;
         transform: translate3d(0, 100%, 0);
         @include easeOut;
 
         &.show {
             // Slide menu in from bottom
-            transform: translate3d(0,0,0);
-        };
+            transform: translate3d(0, 0, 0);
+        }
 
         .portrait {
             width: 250px;
@@ -90,17 +94,21 @@
             pointer-events: none;
         }
     }
+
     .nav-item {
         transform: translate3d(600px, 0, 0); //move off to right
         @include easeOut;
+
         &.show {
             // Slide links in from right
-            transform: translate3d(0,0,0);
+            transform: translate3d(0, 0, 0);
         }
-        &.active > a {
-            color: $third-color;
+
+        &.active>a {
+            color: #000;
         }
     }
+
     .nav-link {
         display: inline-block;
         position: relative;
@@ -111,8 +119,9 @@
         color: #fff;
         text-decoration: none;
         @include easeOut;
+
         &:hover {
-            color: $third-color;
+            color: #000;
             font-size: 3rem;
         }
     }

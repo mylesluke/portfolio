@@ -1,5 +1,4 @@
 @import 'config';
-@import 'menu';
 
 * {
     box-sizing: border-box;
@@ -253,6 +252,7 @@ main {
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     text-transform: uppercase;
     overflow: hidden;
+    font-weight: 500;
     &:before {
         content: '';
         position: absolute;
@@ -390,4 +390,5 @@ label {
     font-size: .8rem;
 }
 
+@import 'menu';
 @import 'mobile';
