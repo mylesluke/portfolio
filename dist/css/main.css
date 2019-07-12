@@ -29,21 +29,31 @@ body {
     min-height: 100%;
     z-index: -1; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 3rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 1rem;
     font-family: 'Marck Script', cursive; }
-  h1.logo, h2.logo, h3.logo {
+  h1.logo,
+  h2.logo,
+  h3.logo {
     position: absolute;
     z-index: 3;
     top: 25px;
     left: 50px;
     font-family: 'Satisfy', cursive; }
-  h1#title, h2#title, h3#title {
+  h1#title,
+  h2#title,
+  h3#title {
     font-weight: 500;
     text-align: center; }
 
@@ -145,8 +155,7 @@ main {
     .projects img:hover {
       opacity: 0.6;
       border-color: #63707e;
-      transition: all 0.5s ease-out;
-      pointer-events: none; }
+      transition: all 0.5s ease-out; }
   .projects li {
     margin: 0 10%; }
   .projects .item-1 {
@@ -164,27 +173,51 @@ main {
 
 .btn, .btn-dark, .btn-light, #btnHire, .submit {
   display: inline-block;
-  border: 2px solid #000;
+  border: 2px solid #63707e;
   color: #fff;
   background: none;
   padding: 12px 40px;
   cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+  font-size: 1rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover, #btnHire:hover, .submit:hover {
-    padding: 16px 44px;
-    transition: all 0.5s ease-out;
-    box-shadow: none; }
+    transition: all 0.5s ease-out; }
+
+.btn-project, .btn-dark, .btn-light {
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s; }
+  .btn-project:before, .btn-dark:before, .btn-light:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #b33939;
+    z-index: -1;
+    transition: 0.8s; }
 
 .btn-dark {
-  background: black;
-  color: #fff;
+  color: #000;
   margin-top: 5%; }
+  .btn-dark:before {
+    top: 0;
+    border-radius: 0 0 50% 50%; }
+  .btn-dark:hover {
+    color: #fff; }
+  .btn-dark:hover:before {
+    height: 180%; }
 
 .btn-light {
-  background: #faf1f1;
-  color: #333;
+  color: #fff;
   margin-top: 5%; }
+  .btn-light:before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    height: 180%; }
+  .btn-light:hover {
+    color: #000; }
+  .btn-light:hover:before {
+    height: 0%; }
 
 .calendar {
   display: block; }

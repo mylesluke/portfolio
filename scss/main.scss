@@ -6,23 +6,28 @@
 
 body {
     @include background;
-    background: #fff; 
+    background: #fff;
     height: 100%;
     margin: 0;
     font-family: 'quicksand', sans-serif;
     line-height: 1.5;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     margin: 0;
     font-weight: 400;
+
     &.lg-heading {
         font-size: 3rem;
     }
+
     &.sm-heading {
         margin-bottom: 1rem;
         font-family: 'Marck Script', cursive;
     }
+
     &.logo {
         position: absolute;
         z-index: 3;
@@ -30,6 +35,7 @@ h1,h2,h3 {
         left: 50px;
         font-family: 'Satisfy', cursive;
     }
+
     // for the projects page
     &#title {
         font-weight: 500;
@@ -58,6 +64,7 @@ main {
         a {
             padding: 0.4rem;
             color: #fff;
+
             &:hover {
                 color: $secondary-color;
                 @include easeOut();
@@ -68,40 +75,51 @@ main {
     &#home {
         color: #fff;
         overflow: hidden;
+
         h1 {
             margin-top: 30vh;
             margin-left: 10vh;
         }
+
         h2 {
             margin-left: 10vh;
         }
+
         .icons {
             margin-top: 20px;
             margin-left: 10vh;
         }
+
         #btnHire {
             margin-left: 10vh;
         }
+
         #bold {
             font-weight: 900;
             font-family: sans-serif;
         }
+
         #unique {
             font-family: sans-serif;
             font-style: italic;
         }
     }
+
     &#about {
         overflow: hidden;
+
         h1 {
             margin-top: 5vh;
         }
     }
+
     &#work {
         overflow: hidden;
+
         h1 {
             margin-top: 5vh;
         }
+
         h3 {
             font-size: 1.5rem;
             font-weight: 500;
@@ -113,28 +131,31 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-    'bio-image bio bio'
-    'gear1 gear2 gear3';
+        'bio-image bio bio'
+        'gear1 gear2 gear3';
     grid-template-columns: (repeat3, 1fr);
+
     .bio-image {
         grid-area: bio-image;
         margin: auto;
         border-radius: 50%;
         border: $secondary-color 5px solid;
     }
-    
+
     .bio {
         grid-area: bio;
         font-size: 1rem;
         padding: 20px;
+
         li {
             text-align: left;
         }
-        h3{ 
+
+        h3 {
             font-weight: 700;
         }
     }
-    
+
     .gear {
         background: lighten($secondary-color, 5);
         padding: 1rem;
@@ -142,19 +163,20 @@ main {
         border-bottom: $primary-color 5px solid;
         color: #fff;
         text-align: left;
+
         li {
             margin: 0 10%;
         }
     }
-    
+
     .gear-1 {
         grid-area: gear1;
     }
-    
+
     .gear-2 {
         grid-area: gear2;
     }
-    
+
     .gear-3 {
         grid-area: gear3;
     }
@@ -170,19 +192,20 @@ main {
     grid-gap: 5rem;
     margin-top: 10vh;
     justify-items: center;
+
     img {
         height: 350px;
         width: 350px;
         border-radius: 15px;
         box-shadow: 8px 8px 10px rgb(153, 153, 153);
-        
+
         &:hover {
             opacity: 0.6;
             border-color: $secondary-color;
             @include easeOut;
-            pointer-events: none;
         }
     }
+
     li {
         margin: 0 10%;
     }
@@ -190,53 +213,100 @@ main {
     .item-1 {
         grid-area: item-pic1;
     }
+
     .item-desc-1 {
         grid-area: item-desc1;
     }
+
     .item-2 {
         grid-area: item-pic2;
     }
+
     .item-desc-2 {
         grid-area: item-desc2;
     }
+
     .item-3 {
         grid-area: item-pic3;
     }
+
     .item-desc-3 {
         grid-area: item-desc3;
     }
 }
 
-// Button Styles
+// General Button Style
 .btn {
     display: inline-block;
-    border: 2px solid #000;
+    border: 2px solid $secondary-color;
     color: #fff;
     background: none;
     padding: 12px 40px;
     cursor: pointer;
     font-size: 1rem;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 
     &:hover {
-        padding: 16px 44px;
         @include easeOut;
-        box-shadow: none;
     }
 }
 
+// General Project Button Style
+.btn-project {
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: $primary-color;
+        z-index: -1;
+        transition: 0.8s;
+    }
+}
+
+// Project Button Styles
 .btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
+    @extend .btn; // Button Size
+    @extend .btn-project; // Button Effect
+    color: #000;
     margin-top: 5%;
+
+    &:before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+
+    &:hover:before {
+        height: 180%;
+    }
 }
 
 .btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333;
+    @extend .btn; // Button Size
+    @extend .btn-project; // Button Effect
+    color: #fff;
     margin-top: 5%;
+
+    &:before {
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+        height: 180%;
+    }
+
+    &:hover {
+        color: #000;
+    }
+    &:hover:before {
+        height: 0%;
+    }
 }
 
 .calendar {
@@ -247,12 +317,13 @@ main {
     @extend .btn;
     position: relative;
     letter-spacing: 4px;
-    background: rgba(255,255,255,0.1);
-    border: none; 
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     overflow: hidden;
     font-weight: 500;
+
     &:before {
         content: '';
         position: absolute;
@@ -260,9 +331,10 @@ main {
         left: 0;
         width: 50%;
         height: 100%;
-        background: rgba(255,255,255,.1);
-        
+        background: rgba(255, 255, 255, .1);
+
     }
+
     &:after {
         content: '';
         position: absolute;
@@ -270,58 +342,72 @@ main {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,.4),transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
         transition: 0.5s;
         transition-delay: 0.2s;
     }
+
     &:hover:after {
         left: 100%;
     }
+
     & span {
         position: absolute;
         display: block;
         transition: 0.5s ease;
     }
-    & span:nth-child(1) { // top-left going right
+
+    & span:nth-child(1) {
+        // top-left going right
         top: 0;
         left: 0;
         width: 0;
         height: 1px;
         background: #fff;
     }
-    &:hover span:nth-child(1) { 
+
+    &:hover span:nth-child(1) {
         width: 100%;
         transform: translateX(100%);
     }
-    & span:nth-child(3) { // top-right going left
+
+    & span:nth-child(3) {
+        // top-right going left
         bottom: 0;
         right: 0;
         width: 0;
         height: 1px;
         background: #fff;
     }
+
     &:hover span:nth-child(3) {
         width: 100%;
         transform: translateX(-100%);
     }
-    & span:nth-child(2) { //top-left going down
+
+    & span:nth-child(2) {
+        //top-left going down
         top: 0;
         left: 0;
         width: 1px;
         height: 0;
         background: #fff;
     }
+
     &:hover span:nth-child(2) {
         height: 100%;
         transform: translateY(100%);
     }
-    & span:nth-child(4) { //bottom-right going up
+
+    & span:nth-child(4) {
+        //bottom-right going up
         bottom: 0;
         right: 0;
         width: 1px;
         height: 0;
         background: #fff;
     }
+
     &:hover span:nth-child(4) {
         height: 100%;
         transform: translateY(-100%);
@@ -337,7 +423,7 @@ form-control {
     width: 100%;
 }
 
-textarea{
+textarea {
     overflow: auto;
     resize: none;
     border-radius: .25rem;
@@ -353,6 +439,7 @@ input {
     width: 100%;
     padding: 5px;
 }
+
 .submit {
     @extend .btn;
     width: 50%;
@@ -360,7 +447,7 @@ input {
     text-align: center;
     color: #000;
     border: 3px solid #000;
-    
+
 }
 
 label {
@@ -370,11 +457,13 @@ label {
 
 .download {
     text-align: center;
+
     a {
         color: #000;
         font-weight: bold;
         text-decoration: none;
     }
+
     a:hover {
         color: $secondary-color;
     }
