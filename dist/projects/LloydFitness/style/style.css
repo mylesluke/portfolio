@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+nav .navbar-toggler {
+  border: none;
+}
+
+nav .navbar-toggler:hover {
+  background: #44C184;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+nav .navbar-brand {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 5%;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+nav .navbar-brand:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 6px;
+  border-bottom: 1px solid #44C184;
+}
+
+nav .navbar-brand:hover:after {
+  border-bottom: 1px solid white;
+}
+
+.nav-title {
+  color: #44C184;
+}
+
+.header {
+  background: #000 url("../images/home.jpg") no-repeat center top;
+  background-size: cover;
+  height: 55vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.header img {
+  width: 200px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+.sub-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  color: white;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.sub-header .btn-join {
+  margin-left: 5%;
+}
+
+.sub-header .btn-join:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.sub-header .btn-join:hover {
+  z-index: 0;
+  color: black;
+}
+
+.sub-header .btn-join:hover:before {
+  height: 180%;
+}
+
+.btn, .sub-header .btn-join, main .section2 .col-services .footer .btn-signup, main .section2 .col-services .footer .btn-signup-blank, main .section3 form .right-container .btn-submit {
+  background: #44C184;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  font-weight: 600;
+}
+
+.btn:before, .sub-header .btn-join:before, main .section2 .col-services .footer .btn-signup:before, main .section2 .col-services .footer .btn-signup-blank:before, main .section3 form .right-container .btn-submit:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: white;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.container {
+  width: 80%;
+}
+
+.section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.section-heading h4 {
+  font-weight: 600;
+}
+
+.section-heading hr {
+  width: 15%;
+  border: 1px solid #44C184;
+}
+
+main .section1 {
+  background: #fff;
+  padding: 20px;
+}
+
+main .section1 .col-main h3 {
+  font-weight: 600;
+}
+
+main .section1 .col-main i {
+  color: #44C184;
+  padding: 10px;
+}
+
+main .section2 {
+  background: #dfe4ea;
+  padding: 20px;
+}
+
+main .section2 .col-services {
+  background: #fff;
+  border-radius: 20px;
+}
+
+main .section2 .col-services:hover {
+  margin: 10px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+main .section2 .col-services:hover .head {
+  background: #44C184;
+}
+
+main .section2 .col-services .head {
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  background: #44C184;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+
+main .section2 .col-services .pro {
+  background: #343a40;
+}
+
+main .section2 .col-services .basic {
+  background: #343a40;
+}
+
+main .section2 .col-services .price {
+  padding: 20px;
+  font-size: 3rem;
+  background: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+main .section2 .col-services .features ul {
+  list-style: none;
+}
+
+main .section2 .col-services .features ul li {
+  border-bottom: 2px solid #dfe4ea;
+  font-size: 1rem;
+  padding: 3px;
+}
+
+main .section2 .col-services .features ul li span {
+  font-weight: 600;
+}
+
+main .section2 .col-services .footer {
+  padding: 10px;
+}
+
+main .section2 .col-services .footer .btn-signup:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+main .section2 .col-services .footer .btn-signup:hover {
+  z-index: 0;
+  color: #44C184;
+  border: 1px solid #44C184;
+}
+
+main .section2 .col-services .footer .btn-signup:hover:before {
+  height: 180%;
+}
+
+main .section2 .col-services .footer .btn-signup-blank {
+  background: white;
+  border: 1px solid #44C184;
+  color: #44C184;
+}
+
+main .section2 .col-services .footer .btn-signup-blank:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  background: #44C184;
+}
+
+main .section2 .col-services .footer .btn-signup-blank:hover {
+  z-index: 0;
+  color: white;
+}
+
+main .section2 .col-services .footer .btn-signup-blank:hover:before {
+  height: 180%;
+}
+
+main .section3 {
+  background: #fff;
+  padding: 20px;
+}
+
+main .section3 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .section3 form .left-container {
+  width: 50%;
+  padding: 10px;
+}
+
+main .section3 form .right-container {
+  width: 50%;
+  padding: 10px;
+}
+
+main .section3 form .right-container textarea {
+  resize: none;
+}
+
+main .section3 form .right-container .btn-submit {
+  width: 100%;
+}
+
+main .section3 form .right-container .btn-submit:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+main .section3 form .right-container .btn-submit:hover {
+  z-index: 0;
+  color: #44C184;
+  border: 1px solid #44C184;
+}
+
+main .section3 form .right-container .btn-submit:hover:before {
+  height: 180%;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+footer .about {
+  padding: 20px;
+}
+
+footer .about h4 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+footer .about p {
+  padding-top: 10px;
+}
+
+footer .about .social-icon {
+  padding: 5px;
+}
+
+footer .about .social-icon:hover {
+  color: #44C184;
+  cursor: pointer;
+}
+
+footer .details {
+  padding: 20px;
+  overflow: hidden;
+}
+
+footer h6 {
+  text-align: center;
+  font-weight: 600;
+}
+
+footer .btnScrollUp {
+  background: #44C184;
+  border-radius: 10%;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+}
+
+footer .btnScrollUp:hover {
+  color: #343a40;
+}
+/*# sourceMappingURL=style.css.map */
