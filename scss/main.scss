@@ -195,16 +195,9 @@ main {
     justify-items: center;
 
     img {
-        height: 350px;
-        width: 350px;
-        border-radius: 15px;
-        box-shadow: 8px 8px 10px rgb(153, 153, 153);
-
-        &:hover {
-            opacity: 0.6;
-            border-color: $secondary-color;
-            @include easeOut;
-        }
+        padding: 1rem;
+        height: 200px;
+        width: 300px;
     }
 
     li {
@@ -236,11 +229,11 @@ main {
     }
 
     .item-4 {
-        grid-area: item-pic3;
+        grid-area: item-pic4;
     }
 
     .item-desc-4 {
-        grid-area: item-desc3;
+        grid-area: item-desc4;
     }
 }
 

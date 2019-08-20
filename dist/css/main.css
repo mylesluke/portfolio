@@ -148,14 +148,9 @@ main {
   margin-top: 10vh;
   justify-items: center; }
   .projects img {
-    height: 350px;
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 8px 8px 10px #999999; }
-    .projects img:hover {
-      opacity: 0.6;
-      border-color: #63707e;
-      transition: all 0.5s ease-out; }
+    padding: 1rem;
+    height: 200px;
+    width: 300px; }
   .projects li {
     margin: 0 10%; }
   .projects .item-1 {
@@ -171,9 +166,9 @@ main {
   .projects .item-desc-3 {
     grid-area: item-desc3; }
   .projects .item-4 {
-    grid-area: item-pic3; }
+    grid-area: item-pic4; }
   .projects .item-desc-4 {
-    grid-area: item-desc3; }
+    grid-area: item-desc4; }
 
 .btn, .btn-dark, .btn-light, #btnHire, .submit {
   display: inline-block;
@@ -445,7 +440,7 @@ label {
     margin: 0 10%; }
     .projects img {
       height: 400px;
-      width: 300px; } }
+      width: 600px; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -488,8 +483,8 @@ label {
   .projects {
     grid-gap: 2rem; }
     .projects img {
-      width: 270px;
-      height: 440px; } }
+      width: 300px;
+      height: 250px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -505,8 +500,8 @@ label {
     grid-template-areas: 'item-pic1' 'item-desc1' 'item-pic2' 'item-desc2' 'item-pic3' 'item-desc3';
     grid-template-columns: 1fr; }
     .projects img {
-      height: 300px;
-      width: 300px; }
+      height: 250px;
+      width: 350px; }
   .menu-profile .portrait {
     width: 150px;
     height: 150px;
