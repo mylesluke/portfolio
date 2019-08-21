@@ -294,7 +294,6 @@ main {
 .container-items {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
   align-items: center; }
 
 textarea {
@@ -511,9 +510,15 @@ input {
   label {
     font-size: .7rem; }
   .submit {
-    font-size: .7rem; }
+    font-size: .7rem;
+    width: auto; }
   input {
-    line-height: 1rem; }
+    line-height: 1rem;
+    width: 100%; }
   textarea {
     line-height: 1rem;
-    font-size: .9rem; } }
+    font-size: .9rem;
+    width: 100%; }
+  .download a {
+    font-size: .7rem;
+    font-weight: 300; } }

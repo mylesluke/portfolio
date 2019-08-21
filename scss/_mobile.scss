@@ -152,14 +152,22 @@
 
     .submit {
         font-size: .7rem;
+        width: auto;
     }
 
     input {
         line-height: 1rem;
+        width: 100%;
     }
 
     textarea {
         line-height: 1rem;
         font-size: .9rem;
+        width: 100%;
+    }
+
+    .download a {
+        font-size: .7rem;
+        font-weight: 300;
     }
 }
