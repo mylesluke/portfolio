@@ -48,19 +48,25 @@
         <h2 class="sm-heading">
             This is how you can reach me...
         </h2>
-        <form class="form-control" method="POST" action="../php/form-handler.php">
-            <label>Name</label>
-            <input type="text" name="name" maxlength="20" required autofocus><br>
-            <label>Email</label>
-            <input type="text" name="email" maxlength="50" required><br>
-            <label>Subject</label>
-            <input type="text" name="subject" maxlength="20" required><br>
-            <label>Message</label>
-            <textarea rows='10' cols='15' name="message" maxlength="250" required></textarea><br>
-            <input type="submit" class="submit btn" name="btnSubmit" value="Submit">
-        </form>
-        <div class="download">
-            <a href="./downloads/CV.docx" download>Download CV</a>
+        <div class="form-container">
+            <form class="form-control" method="POST" action="../php/form-handler.php">
+                <div class="container-items">
+                    <label>Name</label>
+                    <input type="text" name="name" maxlength="20" required autofocus><br>
+                    <label>Email</label>
+                    <input type="text" name="email" maxlength="50" required><br>
+                    <label>Subject</label>
+                    <input type="text" name="subject" maxlength="20" required><br>
+                </div>
+                <div class="container-items">
+                    <label>Message</label>
+                    <textarea rows='10' cols='15' name="message" maxlength="250" required></textarea><br>
+                    <input type="submit" class="submit btn" name="btnSubmit" value="Submit">
+                </div>
+            </form>
+            <div class="download">
+                <a href="./downloads/CV.docx" download>Download CV</a>
+            </div>
         </div>
     </main>
 
