@@ -28,13 +28,16 @@
             h1 {
                 margin-left: 0;
             }
+
             h2 {
                 margin-left: 0;
             }
+
             #btnHire {
                 margin-left: 0;
                 margin-top: 5vh;
             }
+
             .icons {
                 margin-left: 0;
             }
@@ -42,32 +45,32 @@
     }
 
     ul.menu-nav,
-        div.menu-profile {
-            float: none;
-            width: 100%;
-            min-height: 0;
+    div.menu-profile {
+        float: none;
+        width: 100%;
+        min-height: 0;
 
-            &.show {
-                transform: translate3d(0, 0, 0);
-            }
+        &.show {
+            transform: translate3d(0, 0, 0);
         }
+    }
 
-        .menu-nav {
-            height: 55vh;
-            transform: translate3d(-100%, 0, 0); // Comes in from left
-            font-size: 24px;
+    .menu-nav {
+        height: 55vh;
+        transform: translate3d(-100%, 0, 0); // Comes in from left
+        font-size: 24px;
+    }
+
+    .menu-profile {
+        height: 45vh;
+        transform: translate3d(100%, 0, 0); // Comes in from right
+
+        .portrait {
+            background: url(../img/profileSm.jpg);
+            width: 150px;
+            height: 150px;
         }
-
-        .menu-profile {
-            height: 45vh;
-            transform: translate3d(100%, 0, 0); // Comes in from right
-
-            .portrait {
-                background: url(../img/profileSm.jpg);
-                width: 150px;
-                height: 150px;
-            }
-        }
+    }
 
     .about-info {
         grid-template-areas:
@@ -114,7 +117,9 @@
             'item-pic2'
             'item-desc2'
             'item-pic3'
-            'item-desc3';
+            'item-desc3'
+            'item-pic4'
+            'item-desc4';
         grid-template-columns: 1fr;
 
         img {

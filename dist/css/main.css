@@ -148,9 +148,8 @@ main {
   margin-top: 10vh;
   justify-items: center; }
   .projects img {
-    padding: 1rem;
-    height: 200px;
-    width: 300px; }
+    height: 300px;
+    width: 400px; }
   .projects li {
     margin: 0 10%; }
   .projects .item-1 {
@@ -497,7 +496,7 @@ label {
       font-size: 1rem; }
   .projects {
     grid-gap: 1rem;
-    grid-template-areas: 'item-pic1' 'item-desc1' 'item-pic2' 'item-desc2' 'item-pic3' 'item-desc3';
+    grid-template-areas: 'item-pic1' 'item-desc1' 'item-pic2' 'item-desc2' 'item-pic3' 'item-desc3' 'item-pic4' 'item-desc4';
     grid-template-columns: 1fr; }
     .projects img {
       height: 250px;
